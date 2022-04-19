@@ -1,3 +1,4 @@
+
 #include<stdio.h>
 int isUgly(int n)
 {
@@ -28,3 +29,5 @@ int main()
         printf("Not Ugly Number");
     return 0;
 }
+    
+    
