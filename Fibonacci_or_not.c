@@ -1,0 +1,31 @@
+#include<stdio.h>
+int main()
+{
+    int num,a,b,c;
+    scanf("%d",&num);
+    if(num==0 || num==1)
+    {
+        printf("True");
+    }
+    else
+    {
+        a=0;
+        b=1;
+        c=a+b;
+        while(c<num)
+        {
+            a=b;
+            b=c;
+            c=a+b;
+        }
+        if(c==num)
+        {
+            printf("True");
+        }
+        else
+        {
+            printf("False");
+        }
+    }
+    return 0;
+}
