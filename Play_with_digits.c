@@ -1,25 +1,20 @@
 #include<stdio.h>
-void fun(int *arr,int n)
-{
-    int i,s=0,r;
-    for(i=0;i<n;i++)
-    {
-        while(arr[i])
-        {
-            r=arr[i]%10;
-            arr[i]=arr[i]/10;
-            s=s+r;
-        }
-    }
-    printf("%d",s);
-}
 int main()
 {
-    int i,n,arr[100];
+    int c=0,n,arr[100],i,d;
     scanf("%d",&n);
     for(i=0;i<n;i++)
     {
         scanf("%d",&arr[i]);
     }
-   fun(arr,n);
+    for(i=0;i<n;i++)
+    {
+        while(arr[i])
+        {
+            d=arr[i]%10;
+            arr[i]=arr[i]/10;
+            c=c+d;
+        }
+    }
+      printf("%d",c);
 }
