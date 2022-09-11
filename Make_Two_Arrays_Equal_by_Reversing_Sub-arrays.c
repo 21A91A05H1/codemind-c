@@ -1,0 +1,37 @@
+#include<stdio.h>
+int main()
+{
+    int i,n1,a[10],b[10],n2,j,c=0,f=0;
+    scanf("%d",&n1);
+    for(i=0;i<n1;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    scanf("%d",&n2);
+    for(i=0;i<n2;i++)
+    {
+        scanf("%d",&b[i]);
+    }
+    for(i=0;i<n1;i++)
+    { 
+        c=0;
+        for(j=0;j<n2;j++)
+        {
+            if(a[i]==b[j])
+            {
+                c=1;
+                break;
+            }
+        }
+        if(c==0)
+        {
+            f=1;
+            printf("False");
+            break;
+        }
+    }
+    if(f==0)
+    {
+        printf("True");
+    }
+}
