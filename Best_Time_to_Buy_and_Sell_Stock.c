@@ -1,0 +1,33 @@
+#include<stdio.h>
+int main()
+{
+    int n,i,a[100],m,m1=999,m2=0;
+    scanf("%d",&n);
+    m=n/2;
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    for(i=0;i<=m;i++)
+    {
+        if(a[i]<m1)
+        {
+            m1=a[i];
+        }
+    }
+    for(i=n;i>=m;i--)
+    {
+        if(a[i]>m2)
+        {
+            m2=a[i];
+        }
+    }
+    if((m2-m1)>0)
+    {
+        printf("%d",m2-m1);
+    }
+    else
+    {
+        printf("0");
+    }
+}
